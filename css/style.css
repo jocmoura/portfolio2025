@@ -55,11 +55,27 @@ header a{
 }
 
 header a:hover{
-    color: var(--white);
+    color: var(--blue);
 }
 
 /*Fim menu*/
 
+/* Sobre */
+
+#sobre{
+    margin-top: 10%;
+    font-size: 1.8rem;;
+}
+#sobre-info #sobre a{
+    text-decoration: none;
+    color: var(--white);
+    
+}
+#sobre-info #sobre a:hover{
+    
+    color: var(--cinza);
+    
+}
 
 /*Começo main*/
 main{
@@ -76,9 +92,11 @@ main .info-area h1{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+main .info-area .barra{
+    padding-left: 45px;
+}
 main .info-area p{
     font-size: 36px;
-    padding-left: 55px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
 }
@@ -136,7 +154,7 @@ body{
     background-color: #1b2a2c;
     
 }
-.top-center{
+.top-center, #sobre h1{
     display: block;
     text-align: center;
     margin: 15px 0;
