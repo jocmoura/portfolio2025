@@ -2,16 +2,19 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 :root{
     --blue: #0D1321;
     --white: #F0EBD8;
     --cinza: #3A3335;
+    --amarelo: #EEC643;
+    --transparente: rgba(255, 255, 255, 0.042)
 }
 
 
 body{
-    background-color: #0D1321;
+    background-color: #1b2a2c;
     margin: 0 100px;
     color: white;
 }
@@ -57,25 +60,7 @@ header a{
 header a:hover{
     color: var(--blue);
 }
-
 /*Fim menu*/
-
-/* Sobre */
-
-#sobre{
-    margin-top: 10%;
-    font-size: 1.8rem;;
-}
-#sobre-info #sobre a{
-    text-decoration: none;
-    color: var(--white);
-    
-}
-#sobre-info #sobre a:hover{
-    
-    color: var(--cinza);
-    
-}
 
 /*Começo main*/
 main{
@@ -126,36 +111,42 @@ main .info-area-cv a:hover{
     background-color: #EEC643;
     color:  var(--blue);
 }
-.photo-img{
-    width: 50%;
+main .minha-foto{
     display: flex;
-    padding-top: 50px;
-    justify-content: center;
+    margin:  auto;
 }
 main  .minha-foto img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 2px solid var(--cinza);
 }
 
 
-article .conteudo-photo img{
-    width: 300px;
-    height: 300px;
+/* Sobre */
 
+#sobre, .top-center{
+    margin-top: 10%;
+    font-size: 1.8rem;
+    border-top: 1px solid var(--transparente);
 }
-
-/*Cards acrecentando*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#sobre h2, .top-center h2 {
+    color: #EEC643;
+    font-size: 3rem;
 }
-body{
-    background-color: #1b2a2c;
+#sobre-info #sobre a{
+    text-decoration: none;
+    color: var(--white);
+    border-bottom: 1px solid;
     
 }
-.top-center, #sobre h1{
+#sobre-info #sobre a:hover{
+    color: var(--amarelo);
+    
+}
+
+/* cards-projetos */
+.top-center, #sobre h2{
     display: block;
     text-align: center;
     margin: 15px 0;
@@ -163,7 +154,6 @@ body{
 .top-center h2{
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
-    color: #ffff;
     margin-bottom: 10px;
     padding: 0 15px;
 }
@@ -175,9 +165,8 @@ body{
     padding: 0 15px;
 }
 
-/*Cards*/
 
-.main{
+.info-cards{
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
@@ -232,6 +221,7 @@ body{
     margin-bottom: 15px;
 
 }
+
 
 .btn{
     color: black;
