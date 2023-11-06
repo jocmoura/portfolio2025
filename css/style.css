@@ -86,6 +86,7 @@ main .welcome{
     text-align: justify;
     margin-top: 2%;
     width: 50%;
+    
 }
 main .info-area h1{
     font-size: 45px;
@@ -131,9 +132,9 @@ main .info-area-cv a:hover{
     padding-top: 50px;
     justify-content: center;
 }
-main img{
-    width: 250px;
-    height: 250px;
+main  .minha-foto img{
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
