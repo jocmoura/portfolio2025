@@ -12,14 +12,13 @@
     main{
         display: block;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        
-        
+       
     }
     main .welcome{
         text-align: center;
         overflow-wrap: break-word;
+        margin-left: auto;
+        margin-right: auto;
         
     }
     
