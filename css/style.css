@@ -125,12 +125,12 @@ main .info-area h1{
 
 /* Sobre */
 
-#sobre, .top-center{
+#sobre, .top-center, .tecnologias{
     margin-top: 10%;
     font-size: 1.8rem;
     border-top: 1px solid var(--transparente);
 }
-#sobre h2, .top-center h2 {
+#sobre h2, .top-center h2, .tecnologias h2 {
     color: #EEC643;
     font-size: 3rem;
 }
@@ -147,9 +147,10 @@ main .info-area h1{
 
 /* cards-projetos */
 .top-center, #sobre h2{
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .top-center h2{
     font-size: 3rem;
@@ -245,4 +246,19 @@ main .info-area h1{
 }
 
 
-
+.tecnologias{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.img-h{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.098);
+    border-radius: 50%;
+    padding: 15px;
+}
+.fa-brands{
+    color: white;
+}
