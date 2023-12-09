@@ -65,10 +65,10 @@ header a:hover{
 /*Fim menu*/
 
 /*Começo main*/
-main{
+.main{
     display: flex;
 }
-main .welcome{
+.main .welcome{
     flex-direction: column;
     text-align: justify;
     margin-top: 2%;
@@ -81,22 +81,22 @@ main .info-area h1{
     
 }
 
-main .info-area p{
+.main .info-area p{
     font-size: 36px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
 }
-main .info-area h3{
+.main .info-area h3{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
 }
-main .info-area-cv{
+.main .info-area-cv{
     border: none;
     margin: 15px 0;
     margin-top: 26px;
 }
-main .info-area-cv a{
+.main .info-area-cv a{
     padding: 8px 18px;
     color:#EEC643 ;
     border: 1px solid #EEC643;
@@ -107,15 +107,15 @@ main .info-area-cv a{
     border-radius: 5px;
     
 }
-main .info-area-cv a:hover{
+.main .info-area-cv a:hover{
     background-color: #EEC643;
     color:  var(--blue);
 }
-main .minha-foto{
+.main .minha-foto{
     display: flex;
     margin:  auto;
 }
-main  .minha-foto img{
+.main  .minha-foto img{
     width: 300px;
     height: 300px;
     border-radius: 50%;

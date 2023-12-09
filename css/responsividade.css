@@ -9,12 +9,12 @@
     .menu ul li a{
         margin: 0 auto;
     }
-    main{
+    .main{
         display: block;
         width: 100%;
        
     }
-    main .welcome{
+    .main .welcome{
         text-align: center;
         overflow-wrap: break-word;
         margin-left: auto;
