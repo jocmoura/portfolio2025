@@ -20,9 +20,9 @@ body{
 }
 /* LOGO */
 header{
-    margin: 25px 0 36px 0;
+    margin: 10px 0 36px 0;
     padding: 5px;
-    border-bottom: 1px solid var(--roxo);
+    
 }
 .logo{
     display: flex;

@@ -1,12 +1,14 @@
 @media screen and (max-width:798px){
     header{
         display: block;
+        flex-direction: column;
     }
-    .menu ul{
-        
+    .nav ul{
+        display: block;
+        flex-direction: column;
         
     }
-    .menu ul li a{
+    .nav ul li a{
         margin: 0 auto;
     }
     .main{
