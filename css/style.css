@@ -5,62 +5,60 @@
     box-sizing: border-box;
 }
 :root{
-    --blue: #0D1321;
-    --white: #F0EBD8;
-    --cinza: #3A3335;
-    --amarelo: #EEC643;
-    --transparente: rgba(255, 255, 255, 0.042)
+    --black: black;
+    --white: #FBF9FF;
+    --verde: #9BC53D;
+    --roxo: #662E9B;
+    
 }
 
 
 body{
-    background-color: #1b2a2c;
+    background-color: var(--black);
     margin: 0 100px;
-    color: white;
+    color: var(--white);
 }
-
+/* LOGO */
 header{
+    margin: 25px 0 36px 0;
+    padding: 5px;
+    border-bottom: 1px solid var(--roxo);
+}
+.logo{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    
-    margin: 15px 0;
-    padding-bottom:20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.042);
+    text-transform: uppercase;
     
 }
-/*logo*/
-.logo h1{
-    color: white;
-    font-size: 2.8rem;
-    font-family: 'Poppins', sans-serif;
-    padding: 5px;
+.seta{
+    color: var(--verde);
 }
 
-/*Começo menu*/
-header .menu ul{
+/* menu */
+.nav {
     display: flex;
-    position: relative;
-    text-decoration: none;
+    justify-content: center;
     text-align: center;
 }
-header .menu ul li{
-    margin-left: 15px;
+.nav ul{
     display: flex;
-    position: relative;
+    justify-content:space-between;
+    text-align: center;
 }
-header a{
+.nav ul li {
+    list-style: none;
+}
+.nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(185, 185, 185);
-    transition: all 1s;
-    text-align: center;
-    padding-top: 25px;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    color: var(--white);
+    cursor: pointer;
+    padding: 0 10px;
 }
-
-header a:hover{
-    color: var(--blue);
+.nav ul li a:hover{
+    color: var(--verde);
 }
 /*Fim menu*/
 
@@ -98,8 +96,8 @@ main .info-area h1{
 }
 .main .info-area-cv a{
     padding: 8px 18px;
-    color:#EEC643 ;
-    border: 1px solid #EEC643;
+    color:var(--white) ;
+    border: 1px solid var(--roxo);
     font-size: 26px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -108,8 +106,9 @@ main .info-area h1{
     
 }
 .main .info-area-cv a:hover{
-    background-color: #EEC643;
-    color:  var(--blue);
+    background-color: var(--verde);
+    color:  var(--white);
+    border: 1px solid var(--verde);
 }
 .main .minha-foto{
     display: flex;
