@@ -258,18 +258,33 @@ main .info-area h1{
 
 
 .tecnologias{
-    margin-top: 150px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
+   
+}
+.principais-tecnologias{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 .img-h{
-    width: 150px;
-    height: 150px;
-    border: 1px solid rgba(255, 255, 255, 0.098);
-    border-radius: 50%;
+    width: 120px;
+    height: 120px;
     padding: 15px;
 }
 .fa-brands{
     color: white;
+}
+
+.img-js{
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+}
+.img-c{
+    width: 120px;
+    height: 120px;
+    padding: 20px;
 }
