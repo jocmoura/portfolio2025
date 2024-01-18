@@ -1,1 +1,1 @@
-Link do portifólio. : jocmoura.github.io/portifolio/
+- [Acesse o projeto finalizado, online](https://jocmoura.github.io/portifolio/)
