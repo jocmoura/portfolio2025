@@ -31,3 +31,32 @@
     
 }
 
+@media screen and (max-width:615px){
+    .logo{
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+    }
+    .nav{
+        display: none;
+    }
+    .welcome{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .main .welcome{
+        display: block;
+        width: 100%;
+    }
+    .info-area, .info-area-cv{
+        justify-content: center;
+    }  
+    .wrap{
+        white-space: wrap;
+    }
+    .sobre{
+        white-space: wrap;
+    }
+}

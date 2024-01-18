@@ -15,7 +15,7 @@
 
 body{
     background-color: var(--black);
-    margin: 0 100px;
+    margin: 0 15px;
     color: var(--white);
 }
 /* LOGO */
@@ -81,6 +81,9 @@ header{
     margin-top: 2%;
     width: 50%;
     
+}
+.j-name{
+    color: var(--roxo);
 }
 main .info-area h1{
     font-size: 45px;
