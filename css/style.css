@@ -15,14 +15,14 @@
     
     
 }
-
-
 body{
     background-color: var(--black);
     margin: 0 60px;
     padding: 30px ;
     color: var(--white);
 }
+
+
 /* LOGO */
 header{
     margin: 10px 0 36px 0;
@@ -66,13 +66,13 @@ header{
 .nav ul li {
     list-style: none;
     
+    
 }
 .nav ul li a{
     text-decoration: none;
     font-size: 1.2rem;
     cursor: pointer;
     padding: 0 10px;
-    
     padding: 15px;
     margin: 10px;
     border: 1px solid var(--cinzaClaro);
@@ -83,6 +83,8 @@ header{
     color: var(--white);
     border: none;
     transition: all 0.9s;
+    color: var(--black);
+    background-color: var(--white);
 }
 .redes{
     display: flex;
@@ -109,12 +111,15 @@ header{
 .redes ul li:hover{
     border:  none;
     color: var(--white);
+    
 }
 
 .redes ul li i{
     margin: 5px ;
 }
-/*Fim menu*/
+
+
+
 
 /*Começo main*/
 .main{
@@ -125,7 +130,6 @@ header{
     text-align: justify;
     margin-top: 2%;
     width: 50%;
-    
 }
 .j-name{
     color: var(--rosa);
@@ -133,7 +137,6 @@ header{
 main .info-area h1{
     font-size: 45px;
     font-family: "Open Sans", sans-serif;
-    
 }
 
 .main .info-area p{
@@ -147,7 +150,6 @@ main .info-area h1{
     padding-top: 10px;
 }
 .main .info-area-cv{
-    
     border: none;
     margin: 15px 0;
     margin-top: 26px;
@@ -163,7 +165,6 @@ main .info-area h1{
     box-sizing: border-box;
     border-radius: 5px;
     transition: 1s;
-    
 }
 .main .info-area-cv a:hover{
     background-color: var(--white);
@@ -188,7 +189,6 @@ main .info-area h1{
     margin-top: 15%;
     font-size: 1.8rem;
     border-top: 1px solid var(--cinza);
-    
 }
 #sobre h2, .top-center h2, .tecnologias h2 {
     color: var(--rosa);
@@ -198,7 +198,6 @@ main .info-area h1{
     text-decoration: none;
     color: var(--white);
     border-bottom: 1px solid;
-    
 }
 
 
