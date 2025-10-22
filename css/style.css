@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Open+Sans:wght@400;500;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 :root{
-    --black: black;
+    --black: #121212;
     --white: #FBF9FF;
-    --verde: #9BC53D;
-    --roxo: #662E9B;
+    --cinza:#A6A6A6;
+    --cinzaEscuro:#3D3D3D;
+    --cinzaClaro:#363636;
+    
     
 }
 
 
 body{
     background-color: var(--black);
-    margin: 0 15px;
+    margin: 0 60px;
+    padding: 30px ;
     color: var(--white);
 }
 /* LOGO */
@@ -29,19 +34,23 @@ header{
     justify-content: space-between;
     text-align: center;
     text-transform: uppercase;
-    
-    
 }
 .logo h1{
-    color: var(--roxo);
+    color: var(--white);
     transition: 1s;
+    
 }
 .logo h1:hover{
     color: var(--verde);
 }
-.seta{
-    color: var(--verde);
+.info-area p{
+    color: var(--cinza);
 }
+.cinza{
+    color: var(--white);
+    border-bottom: 1px solid var(--cinzaEscuro);
+}
+
 
 /* menu */
 .nav {
@@ -56,18 +65,54 @@ header{
 }
 .nav ul li {
     list-style: none;
+    
 }
 .nav ul li a{
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: var(--roxo);
+    font-size: 1.2rem;
     cursor: pointer;
     padding: 0 10px;
-    transition: 1s;
+    
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid var(--cinzaClaro);
+    border-radius: 20px;
+    color: var(--cinza);
 }
 .nav ul li a:hover{
-    color: var(--verde);
+    color: var(--white);
+    border: none;
+    transition: all 0.9s;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.redes ul{
+    display: flex;
+    list-style: none;
+}
+.redes ul li{
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid var(--cinzaClaro);
+    border-radius: 20px;
+    color: var(--cinza);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+
+.redes ul li:hover{
+    border:  none;
+    color: var(--white);
+}
+
+.redes ul li i{
+    margin: 5px ;
 }
 /*Fim menu*/
 
@@ -83,22 +128,22 @@ header{
     
 }
 .j-name{
-    color: var(--roxo);
+    color: var(--rosa);
 }
 main .info-area h1{
     font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     
 }
 
 .main .info-area p{
     font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Open Sans", sans-serif;
     padding-top: 10px;
 }
 .main .info-area h3{
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     padding-top: 10px;
 }
 .main .info-area-cv{
@@ -110,10 +155,10 @@ main .info-area h1{
 .main .info-area-cv a{
     padding: 8px 18px;
     color:var(--white) ;
-    background: var(--roxo);
-    border: 1px solid var(--white);
+    background: var(--rosa);
+    border: 1px solid var(--cinzaEscuro);
     font-size: 26px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     box-sizing: border-box;
     border-radius: 5px;
@@ -121,13 +166,13 @@ main .info-area h1{
     
 }
 .main .info-area-cv a:hover{
-    background-color: var(--verde);
-    color:  var(--white);
+    background-color: var(--white);
+    color:  var(--black);
     border: 1px solid var(--verde);
 }
 .main .minha-foto{
     display: flex;
-    margin:  auto;
+    padding-left: 35%;
 }
 .main  .minha-foto img{
     width: 300px;
@@ -140,12 +185,13 @@ main .info-area h1{
 /* Sobre */
 
 #sobre, .top-center, .tecnologias{
-    margin-top: 10%;
+    margin-top: 15%;
     font-size: 1.8rem;
-    border-top: 1px solid var(--transparente);
+    border-top: 1px solid var(--cinza);
+    
 }
 #sobre h2, .top-center h2, .tecnologias h2 {
-    color: var(--roxo);
+    color: var(--rosa);
     font-size: 3rem;
 }
 #sobre-info #sobre a{
@@ -154,10 +200,7 @@ main .info-area h1{
     border-bottom: 1px solid;
     
 }
-#sobre-info #sobre a:hover{
-    color: var(--amarelo);
-    
-}
+
 
 /* cards-projetos */
 .top-center, #sobre h2{
@@ -168,14 +211,14 @@ main .info-area h1{
 }
 .top-center h2{
     font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin-bottom: 10px;
     padding: 0 15px;
 }
 .top-center p{
     font-size: 1.2rem;
     color:#d9e6eb77 ;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 200;
     padding: 0 15px;
 }
@@ -188,7 +231,7 @@ main .info-area h1{
 }
 
 .content{
-    border-radius: 5px;
+    border-radius: 25px;
     min-width: 300px;
     box-sizing: border-box;
     margin: 25px 20px; 
@@ -217,12 +260,11 @@ main .info-area h1{
     width:100%;
     height: 300px;
     
-    
 }
 .card h3{
     color: #ffff;
     font-size: 1.8em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
     border-bottom:1px solid rgba(255, 255, 255, 0.079) ;
     margin: 10px 0;
@@ -230,6 +272,7 @@ main .info-area h1{
 .card .skil{
     color: rgba(245, 222, 179, 0.7);
     font-size: 1.4em;
+
 }
 .card p{
     padding:0 10px;
@@ -239,8 +282,8 @@ main .info-area h1{
 
 
 .btn{
-    color: black;
-    background-color: rgb(255, 140, 0);
+    color: var(--white);
+    background-color: var(--black);
     padding: 8px 18px;
     margin: 10px 0; 
     box-sizing: border-box;
@@ -249,17 +292,19 @@ main .info-area h1{
     font-size: 1.1em;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 0 1em rgba(255, 217, 0, 0.279);
     cursor: pointer;
 }
+.btn:hover{
+    color: var(--white);
+    background-color: var(--cinzaEscuro);
+    
+}
+
 .btn a{
     text-decoration: none;
+    color: var(--white);
 }
-.btn:hover{
-    background-color: black;
-    color:rgb(255, 140, 0) ;
-    box-shadow:  0 0 1em rgba(0, 0, 0, 0.637);
-}
+
 
 
 .tecnologias{
@@ -267,6 +312,7 @@ main .info-area h1{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 120px;
    
 }
 .principais-tecnologias{
@@ -276,20 +322,27 @@ main .info-area h1{
 }
 .img-h{
     width: 120px;
-    height: 120px;
+    height: 130px;
     padding: 15px;
 }
 .fa-brands{
     color: white;
 }
 
-.img-js{
+.img-js, .img-c{
     width: 120px;
-    height: 120px;
+    height: 130px;
     padding: 20px;
 }
-.img-c{
-    width: 120px;
-    height: 120px;
-    padding: 20px;
+
+.skill img:hover{
+    width: 200px;
+    height: 200px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
