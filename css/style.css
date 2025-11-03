@@ -19,23 +19,30 @@
 }
 body{
     background-color: var(--white);
-    color: var(--laranja);
 }
 
 .logo-menu{
     display: flex;
     justify-content: space-evenly;
-    padding: 15px;
+    padding: 15px 5px;
     background: var(--cinza-menu);
 
 }
+.logo-menu .logo h1{
+    letter-spacing: 10px;
+    color: #FF6C35;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Menu */
+
 .nav ul{
     display: flex;
     justify-content: center;
     text-align: center;
 }
 .nav ul li {
-    padding: 0 15px;
+    padding: 0 20px;
     text-decoration: none;
     list-style: none;
 }
@@ -43,7 +50,7 @@ body{
 .nav ul li a{
     text-decoration: none;
     color: var(--white);
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.4rem;
 }
 .nav ul li a:hover{
@@ -52,39 +59,11 @@ body{
     border-bottom: 1px solid var(--white);
 }
 
-
-
-
 /*Fim menu*/
-.redes{
-    display: flex;
 
-}
-.redes ul{
-    display: flex;
-    list-style: none;
-}
-.redes ul li{
-    display: flex;
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid var(--cinzaClaro);
-    border-radius: 20px;
-    color: var(--black);
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    cursor: pointer;
-}
 
-.redes ul li:hover{
-    border:  none;
-    color: var(--white);
-    
-}
 
-.redes ul li i{
-    margin: 5px ;
-}
+
 
 
 
@@ -92,6 +71,7 @@ body{
 /*Começo main*/
 .main{
     display: flex;
+    padding: 5%;
 }
 .main .welcome{
     flex-direction: column;
@@ -100,7 +80,7 @@ body{
     width: 50%;
 }
 .j-name{
-    color: var(--rosa);
+    color: var(--laranja);
 }
 main .info-area h1{
     font-size: 45px;
@@ -109,7 +89,7 @@ main .info-area h1{
 
 .main .info-area p{
     font-size: 36px;
-   font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     padding-top: 10px;
 }
 .main .info-area h3{
@@ -141,34 +121,85 @@ main .info-area h1{
 }
 .main .minha-foto{
     display: flex;
-    padding-left: 25%;
+    padding-left: 15%;
 }
 .main  .minha-foto img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 400px;
+    height: 500px;
+    border-radius: 25%;
     border: 2px solid var(--cinza);
 }
 
 
+/*Links das redes sociais.*/
+.redes{
+    display: flex;
+
+}
+.redes ul{
+    display: flex;
+    list-style: none;
+}
+.redes ul li{
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid var(--cinzaClaro);
+    border-radius: 20px;
+    color: var(--black);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+
+.redes ul li:hover{
+    border:  none;
+    color: var(--black);
+    
+}
+
+.redes ul li i{
+    margin: 5px;
+    color: var(--laranja);
+}
+
 /* Sobre */
 
 #sobre-info{
-    background-color: var(--black);
+    background-color: var(--laranja);
+}
+#sobre p{
+    padding: 2% 5%;
 }
 #sobre, .top-center, .tecnologias{
-    margin-top: 15%;
+    margin-top: 5%;
     font-size: 1.8rem;
-    border-top: 1px solid var(--cinza);
+}
+#sobre p{
+    color: var(--white);
 }
 #sobre h2, .top-center h2, .tecnologias h2 {
-    color: var(--white);
+    color: var(--black);
     font-size: 3rem;
+    padding-top: 2%;
 }
 #sobre-info #sobre a{
     text-decoration: none;
     color: var(--white);
-    border-bottom: 1px solid;
+    
+}
+#sobre-info #sobre a:hover{
+    color: var(--black);
+}
+.conhecimento{
+    
+    border-bottom: 1px solid var(--white);
+}
+.link-github{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 
@@ -187,7 +218,7 @@ main .info-area h1{
 }
 .top-center p{
     font-size: 1.2rem;
-    color:#d9e6eb77 ;
+    color:var(--black) ;
     font-family: "Open Sans", sans-serif;
     font-weight: 200;
     padding: 0 15px;
@@ -211,7 +242,7 @@ main .info-area h1{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    background-color: #31424533;
+    background-color: var(--black);
     border: 1px solid rgba(255, 255, 255, 0.068);
     border-radius: 5px;
     max-width: 400px;
@@ -232,49 +263,46 @@ main .info-area h1{
     
 }
 .card h3{
-    color: #ffff;
+    color: var(--laranja);
     font-size: 1.8em;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     border-bottom:1px solid rgba(255, 255, 255, 0.079) ;
+    justify-content: center;
+    text-align: center;
     margin: 10px 0;
 }
 .card .skil{
-    color: rgba(245, 222, 179, 0.7);
+    color: var(--white);
     font-size: 1.4em;
+    justify-content: center;
+    text-align: center;
 
 }
 .card p{
     padding:0 10px;
     margin-bottom: 15px;
+    color: #FF6C35;
+    text-align: center;
+    justify-content: center;
 
 }
 
-
+/*botoes*/
 .btn{
-    color: var(--white);
-    background-color: var(--black);
-    padding: 8px 18px;
-    margin: 10px 0; 
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 1.1em;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-.btn:hover{
-    color: var(--white);
-    background-color: var(--cinzaEscuro);
+    padding: 20px;
     
 }
-
 .btn a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--laranja);
+    border: 1px solid var(--white);
+    
+    
 }
-
+.btn a:hover{
+    color: white;
+}
 
 
 .tecnologias{

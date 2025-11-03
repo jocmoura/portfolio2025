@@ -39,5 +39,4 @@ Esse projeto está sob a licença MIT.
 Feito por Jonas Moura.
 
 
-
->>>>>>> b316521 (Modificando estrutura/tudo)
+b316521 (Modificando estrutura/tudo)
