@@ -6,7 +6,6 @@
     .nav ul{
         display: block;
         flex-direction: column;
-        
     }
     .nav ul li a{
         margin: 0 auto;
@@ -14,7 +13,7 @@
     .main{
         display: block;
         width: 100%;
-       
+      
     }
     .main .welcome{
         text-align: center;
@@ -23,8 +22,6 @@
         margin-right: auto;
         
     }
-    
-
     .minha-foto img{
         display: none;
     }
@@ -42,14 +39,35 @@
     }
     .welcome{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         text-align: center;
         white-space: nowrap;
+    }
+    .main{
+        padding: 50px;
+        max-width: 35%;
     }
     .main .welcome{
         display: block;
         width: 100%;
     }
+    .j-name{
+    color: var(--laranja);
+    }
+    main .info-area h1{
+        font-size: 25px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .main .info-area p{
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        padding-top: 8px;
+    }
+    .main .wrap{
+        font-size: 14px;
+    }
+
     .info-area, .info-area-cv{
         justify-content: center;
     }  
@@ -58,5 +76,8 @@
     }
     .sobre{
         white-space: wrap;
+    }
+    .minha-foto img{
+        display: none;
     }
 }
