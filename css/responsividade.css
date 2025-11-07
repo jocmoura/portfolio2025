@@ -16,7 +16,6 @@
       
     }
     .main .welcome{
-        text-align: center;
         overflow-wrap: break-word;
         margin-left: auto;
         margin-right: auto;
@@ -71,13 +70,12 @@
     .info-area, .info-area-cv{
         justify-content: center;
     }  
-    .wrap{
-        white-space: wrap;
-    }
+    
     .sobre{
         white-space: wrap;
     }
     .minha-foto img{
         display: none;
     }
+    
 }
