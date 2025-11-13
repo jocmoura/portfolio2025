@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 
 *{
     padding: 0;
@@ -60,12 +62,6 @@ body{
 }
 
 /*Fim menu*/
-
-
-
-
-
-
 
 
 /*Começo main*/
@@ -171,7 +167,7 @@ main .info-area h1{
     background-color: var(--laranja);
 }
 #sobre p{
-    padding: 60px;
+    padding: 20px;
 }
 #sobre, .top-center, .tecnologias{
     margin-top: 5%;
